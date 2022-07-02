@@ -150,7 +150,7 @@ try:
     DOWNLOAD_STATUS_UPDATE_INTERVAL = int(getConfig('DOWNLOAD_STATUS_UPDATE_INTERVAL'))
     OWNER_ID = int(getConfig('OWNER_ID'))
     AUTO_DELETE_MESSAGE_DURATION = int(getConfig('AUTO_DELETE_MESSAGE_DURATION'))
-    TELEGRAM_API = getConfig('TELEGRAM_API')
+    TELEGRAM_API = int(getConfig('TELEGRAM_API'))
     TELEGRAM_HASH = getConfig('TELEGRAM_HASH')
 except:
     log_error("One or more env variables missing! Exiting now")
